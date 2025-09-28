@@ -404,30 +404,45 @@ body {
 }
 
 #tourist .card1 img {
-  width: 500px;
+  width:100%;
+  max-width: 500px;
   /* height:400px; */
 }
 #tourist .card2 img {
   width: 350px;
+  max-width:100%;
+
 }
 #tourist .card3 img {
-  width: 250px;
+  max-width: 250px;
+  width:100%;
+
 }
 #tourist .card4 img {
-  width: 200px;
+  max-width: 200px;
+  width:100%;
+
 }
 
 #tourist .card5 img {
-  width: 300px;
+  max-width: 300px;
+  width:100%;
+
 }
 #tourist .card6 img {
-  width: 300px;
+  max-width: 300px;
+  width:100%;
+
 }
 #tourist .card7 img {
-  width: 450px;
+  max-width: 450px;
+  width:100%;
+  
 }
 #tourist .card8 img {
-  width: 300px;
+  max-width: 300px;
+  width:100%;
+
 }
 
 /* Efek hover */
@@ -480,10 +495,14 @@ body {
 }
 
 #tourist .kotak {
-  margin:20px 0 0 0;
+  margin:20px 0;
   position: relative;
-  width: 720px;
-  height: 420px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width:720px;
+  height: auto;
+  min-height:300px;
   border-radius: 20px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
@@ -597,19 +616,71 @@ body {
     width: 100%;
     max-width: 320px;
   }
+
+  .kotak-kotak {
+    margin:0 10px 0 10px;;
+  }
+
+  .hero h1 {
+    max-width:310px;
+  }
+
+  
+#tourist .card1 img {
+  width:100%;
+  max-width: 500px;
+  /* height:400px; */
+}
+#tourist .card2 img {
+  width: 350px;
+  max-width:100%;
+
+}
+#tourist .card3 img {
+  max-width: 250px;
+  width:100%;
+
+}
+#tourist .card4 img {
+  max-width: 200px;
+  width:100%;
+
+}
+
+#tourist .card5 img {
+  max-width: 300px;
+  width:100%;
+
+}
+#tourist .card6 img {
+  max-width: 300px;
+  width:100%;
+
+}
+#tourist .card7 img {
+  max-width: 450px;
+  width:100%;
+  
+}
+#tourist .card8 img {
+  max-width: 300px;
+  width:100%;
+
+}
 }
 
 #tourist .kotak-kotak {
+  display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   margin-bottom:200px;
 }
 
 
 #tourist .hero h1 {
   font-family: var(--font-secondary);
-  font-size: 100px;
-  font-weight: 700;
+  font-size: clamp(40px, 5vw, 90px);
+  font-weight: 800;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
 }
 
@@ -622,7 +693,7 @@ body {
 
 #tourist .hero h2 {
   font-family:var(--font-secondary);
-  font-size: 30px;
+  font-size: clamp(20px, 5vw, 30px);
   font-weight: 700;
 }
 
@@ -635,9 +706,4 @@ body {
   text-align: center;
   position: relative;
   padding-top: 80px;
-}
-
-#tourist .hero h1 {
-  font-size: 100px;
-  font-weight: 800;
 }
